@@ -11,14 +11,6 @@ var markdown = require('remark-parse')
 var html = require('remark-html')
 const path = require(`path`)
 
-unified()
-  .use(markdown)
-  .use(html)
-  .process('# Hello World')
-  .then(res => console.log(res))
-
-// console.log(hello)
-
 exports.onCreateNode = async ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `Article`) {
