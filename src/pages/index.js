@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
       <ul>
         {data.allArticle.edges.map(({ node }) => (
           <li key={ `article-${node.id}` }>
-            <Link to={node.slug}>
+            <Link to={`/${node.slug}`}>
               {node.title}
             </Link>
           </li>
