@@ -16,7 +16,7 @@ module.exports = {
         dbEngine: {
           client: 'sqlite3',
           connection: {
-            filename: './data/sqlite_markdown.sqlite3',
+            filename: process.env.DATAFILE1,
           },
           useNullAsDefault: true
         },
@@ -33,7 +33,7 @@ module.exports = {
         dbEngine: {
           client: 'sqlite3',
           connection: {
-            filename: process.env.DATAFILE,
+            filename: process.env.DATAFILE2,
           },
           useNullAsDefault: true
         },
