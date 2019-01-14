@@ -3,6 +3,7 @@ require("dotenv").config({
 })
 
 module.exports = {
+  pathPrefix: process.env.PATH_PREFIX,
   siteMetadata: {
     title: 'Gatsby with a SQL source',
   },
